@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhjot Singh - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #2c3e50;
+            background: white;
+            padding: 30px 40px;
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 11pt;
+        }
+
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1a252f;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #546e7a;
+            margin-bottom: 6px;
+        }
+
+        .contact {
+            font-size: 11px;
+            color: #546e7a;
+        }
+
+        .contact a {
+            color: #546e7a;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            color: #1a252f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary {
+            margin-bottom: 12px;
+            font-size: 11pt;
+            line-height: 1.5;
+        }
+
+        .skills-container {
+            margin-bottom: 12px;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+
+        .skills-container strong {
+            color: #1a252f;
+        }
+
+        .experience-item {
+            margin-bottom: 14px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1a252f;
+        }
+
+        .job-date {
+            font-size: 10pt;
+            color: #78909c;
+        }
+
+        .company {
+            font-size: 10.5pt;
+            color: #546e7a;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            margin-left: 18px;
+        }
+
+        li {
+            font-size: 10.5pt;
+            margin-bottom: 3px;
+            line-height: 1.45;
+        }
+
+        .education-section {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10.5pt;
+            margin-top: 6px;
+        }
+
+        .education-item {
+            flex: 1;
+        }
+
+        .education-title {
+            font-weight: 600;
+            color: #1a252f;
+        }
+
+        .education-details {
+            color: #546e7a;
+            font-size: 10pt;
+        }
+
+        @media print {
+            body {
+                padding: 20px 30px;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Prabhjot (Prabh) Singh</h1>
+        <div class="subtitle">Software Development Engineer</div>
+        <div class="contact">
+            Toronto, Ontario | +1(647)879-5213 | mongaprabhjot13@gmail.com |
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Portfolio</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <div class="summary">
+            AWS Certified Associate Developer with 6+ years building scalable, high-performance backend systems using
+            Python, AWS, and cloud-native technologies. Proven delivery across high-throughput real-time media platforms
+            utilizing Gen AI: designed MCP servers exposing MAM databases to LLMs, built autonomous AI agents for
+            broadcast monitoring, architected autoscalable FastAPI microservices on EKS with Kinesis. Strong DevOps
+            background — reduced cloud spend 35%, improved MTTR 25–30%, 95% test coverage.
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <strong>Backend:</strong> Python, FastAPI, Django, SQLAlchemy, Java, JavaScript |
+            <strong>Cloud & AWS:</strong> EC2, EKS, Lambda, Kinesis, SQS, SNS, DynamoDB, Aurora, S3, Glue, Redshift, CloudFormation, Terraform, CDK |
+            <strong>AI & ML:</strong> OpenAI GPT, LangChain, MCP Servers, LLM Integration, Pinecone, TensorFlow, PyTorch |
+            <strong>DevOps:</strong> GitHub Actions, Docker, Jenkins, PyTest, OpenTelemetry, Honeycomb |
+            <strong>Databases:</strong> PostgreSQL, MySQL, DynamoDB, Redis
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Software Development Engineer | Evertz</div>
+                <div class="job-date">Jan 2023 – Present</div>
+            </div>
+            <div class="company">Toronto, ON</div>
+            <ul>
+                <li>Designed and deployed <strong>MCP servers</strong> to securely expose proprietary Media Asset
+                    Management (MAM) databases and live playout schedules to Large Language Models for contextual
+                    querying.</li>
+                <li>Engineered <strong>autonomous AI agents</strong> (FastAPI) to monitor broadcast routing telemetry
+                    and auto-remediate IP routing errors in real-time, reducing manual operator intervention.</li>
+                <li>Architected autoscalable <strong>FastAPI microservice on EKS</strong> with Amazon Kinesis for
+                    high-throughput event ingestion, achieving consistent sub-second SLAs for media-fragment
+                    processing.</li>
+                <li>Automated media asset classification via <strong>OpenAI-driven visual assertion workflow</strong>
+                    on live video streams, ensuring broadcast compliance.</li>
+                <li>Built scalable <strong>RESTful and WebSocket</strong> content streaming services optimizing Aurora
+                    PostgreSQL and DynamoDB data layers for high-performance delivery.</li>
+                <li>Accelerated EC2 launch times <strong>30%</strong> via GitHub Actions CI/CD with semantic
+                    versioning, CodeArtifact integration, and pre-built AMIs.</li>
+                <li>Reduced <strong>cloud spend 35%</strong> and <strong>MTTR 25–30%</strong> via orphaned resource
+                    automation (Python) and Honeycomb/OpenTelemetry distributed tracing.</li>
+                <li>Maintained <strong>95% test coverage</strong> with PyTest; established contract-first API lifecycle
+                    (OpenAPI/Swagger) integrated with CloudFormation, Terraform, and CDK.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Software Development Analyst | Deloitte USI – CIBC Bank</div>
+                <div class="job-date">May 2021 – Apr 2022</div>
+            </div>
+            <div class="company">India</div>
+            <ul>
+                <li>Architected a distributed, event-driven <strong>bank chargeback system</strong> processing 10M+
+                    daily requests; engineered high-concurrency pipelines transmitting consolidated data to Mastercard
+                    and Visa per financial settlement protocols.</li>
+                <li>Implemented <strong>distributed Redis cache</strong> ensuring sub-millisecond data retrieval and
+                    reducing database read contention across 10M daily user requests.</li>
+                <li>Developed <strong>ETL pipelines</strong> with AWS Glue, PySpark, and Pandas ingesting data from
+                    multiple sources into S3 DataLake; reduced API load time 20% via schema migration.</li>
+                <li>Deployed serverless RESTful APIs using <strong>AWS Lambda, API Gateway, and SAM</strong>;
+                    leveraged Redshift for data warehousing and Airflow for workflow orchestration.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Associate Software Developer | Accenture – NBN Australia</div>
+                <div class="job-date">Aug 2019 – May 2021</div>
+            </div>
+            <div class="company">India</div>
+            <ul>
+                <li>Developed serverless RESTful and WebSocket microservices on AWS (Lambda, API Gateway, DynamoDB,
+                    Aurora MySQL) using Python, FastAPI, Django, and SQLAlchemy with OAuth and mTLS authentication.</li>
+                <li>Built software in TDD environment using PyTest and UnitTest; maintained infrastructure with
+                    CloudWatch, CloudFormation, and Terraform.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-section">
+            <div class="education-item">
+                <div class="education-title">M.Sc., Applied Modelling & Quantitative Analysis (Big Data)</div>
+                <div class="education-details">Trent University, Peterborough, ON — GPA 4.0/4.0 | May 2022 – Sept 2023</div>
+            </div>
+            <div class="education-item">
+                <div class="education-title">B.Tech., Computer Science</div>
+                <div class="education-details">Punjab Technical University, India — GPA 8.12/10 | Jul 2015 – Jun 2019</div>
+            </div>
+        </div>
+        <div style="margin-top: 8px; font-size: 10.5pt; color: #546e7a;">
+            <strong style="color: #1a252f;">Certifications:</strong>
+            AWS Certified Associate Developer · AWS Cloud Practitioner · ISC2 Cybersecurity Certified ·
+            Microsoft Azure Fundamentals · Azure Data Fundamentals · Azure AI Fundamentals · Deloitte Applause Award
+        </div>
+    </section>
+</body>
+
+</html>
