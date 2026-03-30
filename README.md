@@ -102,7 +102,26 @@ Add `"both versions"` to your prompt to also generate a `-b` variant.
 
 ---
 
-### Workflow 2: Generate Google Dorks for Job Hunting
+### Workflow 2: Generate Cover Letter
+
+Reads `resume-c.html` and the job description, then generates a concise plain-text cover letter under 100 words — no filler, no fabrication, only content traceable to your actual resume.
+
+**Rules:**
+- Strictly under 100 words
+- Plain text, single paragraph — no headers, no bullets
+- Only uses content from `resume-c.html` — never invents experience or metrics
+- Mirrors key JD terminology naturally
+
+**Usage — paste this into Claude Code:**
+```
+Generate a cover letter for this job: [paste full JD here], save as coverletter-[company]-[role]
+```
+
+**Output:** `versions/cover_letter/{file_name}.txt` (gitignored)
+
+---
+
+### Workflow 3: Generate Google Dorks for Job Hunting
 
 Reads your resume, extracts your tech stack, seniority, and role keywords, then generates optimized Google search queries targeting specific ATS platforms and job boards.
 
